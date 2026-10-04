@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wane · Monday preview</title>
+  <link rel="icon" href="/wane-pitch-site/app/favicon.svg">
+  <meta name="theme-color" content="#eef3f0">
+  <script type="module" crossorigin src="/wane-pitch-site/assets/index-BnN90JTo.js"></script>
+  <link rel="stylesheet" crossorigin href="/wane-pitch-site/assets/index-CV7G5bU-.css">
+</head>
+<body>
+  <main class="viewport">
+    <div class="stage" id="stage">
+      <div class="slide-footer"><span>Wane</span><span id="slide-count"></span></div>
+      <div class="moon-mark" id="moon-mark" aria-hidden="true"></div>
+
+<section class="slide s-cover" data-title="Wane" data-seconds="10" data-notes="We are Wane. We are building a weekly plan for adults who already vape and want less nicotine.">
+<div class="cover-text">
+ <div class="wordmark">Wane<span class="moon-row" id="moon-row" aria-hidden="true"></span></div>
+ <h1>A weekly plan<br>for <span>less nicotine.</span></h1>
+ <p class="lede">For adults who<br>already vape.</p>
+</div>
+<figure class="cover-figure"><svg class="cover-line" id="cover-art" aria-hidden="true"></svg><figcaption>Simulated example</figcaption></figure>
+<footer class="cover-foot">Rafael, Ilian, Ismael &amp; Samy <span>Team 38 / IE Tech Venture Bootcamp</span></footer>
+</section>
+<section class="slide s-problem" data-title="The customer we are testing" data-seconds="25" data-notes="Our starting customer: an adult who vapes daily on a refillable device and wants less nicotine. In one study, as vapers lowered their strength, on average from about fourteen to ten milligrams, they used fifty-four percent more liquid, and their nicotine level did not fall. Today they choose the next strength without data. Interviews will test this.">
+<div class="col"><p class="eyebrow">Our starting customer (hypothesis)</p><h2>Already vaping.<br>Ready to cut down.</h2><p class="lede">An adult who vapes daily,<br>uses a refillable device,<br>and wants less nicotine.</p></div>
+<div class="decision"><p class="decision-label">In one study, as vapers lowered their strength</p><p class="pain-number">+54%</p><p class="pain-text">more liquid used.<br>Their nicotine level did not fall.</p><cite class="pain-cite">One study: 27 UK vapers over 12 months, 13.8 to 9.9 mg/ml. Soar et al., 2019.</cite><div class="decision-options"><span>Lower it?</span><span>Stay here?</span></div><p class="decision-note">Today they decide without data.</p></div>
+</section>
+<section class="slide s-evidence" data-title="Evidence for this starting point" data-source="https://doi.org/10.1136/tc-2022-057710" data-seconds="25" data-notes="Among US tank users, more tried cutting back gradually than quitting outright: twenty-seven against fourteen percent, and people could report both. In Spain, five percent of fifteen to sixty-four year olds vaped in the last month in 2024, up from two percent in 2018. Half of EU vapers use a refillable tank every day.">
+<header><h2>Cutting back is already<br>a route people try</h2><p class="lede">US adult tank users, quit attempts in the past year</p></header>
+<div class="evidence-pair"><div class="evidence-number"><strong>26.9<span>%</span></strong><p>Tried to quit by<br><b>cutting back gradually</b></p></div><div class="evidence-number secondary"><strong>13.6<span>%</span></strong><p>Tried to quit<br><b>completely</b></p></div></div>
+<footer class="evidence-source"><p>People could report both. This measures attempts, not success.</p><cite>US PATH, 2018 to 2019. Tank subgroup: 1,276 adults. Palmer et al., 2024, Table 1. Sources in the backup slides.</cite></footer>
+<div class="evidence-more"><div><strong>2% → 5%</strong><p>of people in Spain aged 15 to 64 vaped in the last 30 days (2018, then 2024)</p><cite>EDADES 2018 and 2024, Ministerio de Sanidad. 2024 sample: 26,878.</cite></div><div><strong>51%</strong><p>of EU vapers use a refillable tank every day</p><cite>Special Eurobarometer 539, May to June 2023. 814 current vapers.</cite></div></div>
+</section>
+<section class="slide s-solution" data-title="How Wane works" data-seconds="25" data-notes="The clip is designed to record when and how long each puff is. Each week, the app chooses a full step, a smaller step, or a hold, then gives a mixing recipe. Today the model can slow down near the end; making it respond to people puffing more is our next engine work.">
+<header><h2>Puff patterns inform<br>the next weekly step</h2></header>
+<ol class="flow"><li><span class="flow-number">01</span><h3>Record</h3><p>A small clip is designed to record<br>when and how long you puff.</p><span class="flow-status">Clip prototype</span></li><li><span class="flow-number">02</span><h3>Adapt</h3><p>The app chooses a step down,<br>a smaller step, or a hold.</p><span class="flow-status">Working app</span></li><li><span class="flow-number">03</span><h3>Mix</h3><p>One weekly recipe for<br>the next bottle’s strength.</p><span class="flow-status">Working app</span></li></ol>
+</section>
+<section class="slide s-chart" data-title="How the plan adapts" data-seconds="20" data-notes="In simulation, Marta reaches zero strength in week twenty-six. Lucía has holds and smaller steps, reaching zero in week thirty-five. The model changes the pace. These examples show software behaviour. Real outcomes still need testing.">
+<header class="chart-head"><h2>The plan can pause</h2><p class="lede">Two simulated people. The same decision engine.</p></header>
+<figure class="chart"><svg id="plan-chart" role="img" aria-label="In simulation, Marta reaches zero strength in week 26. Lucía has holds and smaller steps and reaches zero in week 35."></svg><figcaption>In simulation. Weekly strengths joined by curves. Vertical scale stretched near zero.<br>Weeks include three learning weeks.</figcaption></figure>
+</section>
+<section class="slide s-demo" data-title="The working app" data-seconds="55" data-notes="[If no clip, hold P for two seconds.] This puff is simulated. [Only with verified hardware: This room-air syringe pull arrived over Bluetooth.] The separate app shows Lucía, a simulated person with weeks of history. [1] She is holding at two point seven milligrams per millilitre. [2] Why? This is the current model’s hold decision, not a validated measure of how she feels. [4] Her activity view shows the pattern. [5] The recipe gives her one next action. The app is working live. Her history and the model’s estimates are simulated.">
+<div class="demo-left"><header><p class="eyebrow">Working app / simulated person</p><h2>One clear<br>next action</h2></header>
+<div class="puffs" id="puffs"><div class="clip-row"><span class="chip" id="clip-chip">Simulated input</span><button type="button" class="btn" id="clip-connect"><i data-icon="bluetooth"></i>Connect clip</button></div>
+<div class="puff-numbers"><div><span class="big" id="puff-count">0</span><span class="label">puffs this demonstration</span></div><div><span class="big" id="puff-last">-</span><span class="label">last puff / seconds</span></div></div>
+<div class="puff-bars" id="puff-bars" aria-label="Recent demonstration puff durations"></div><div class="puff-bottom"><button type="button" class="btn ghost" id="puff-sim">Hold to puff (P)</button><button type="button" class="sample-btn" id="puff-sample">Play 2 s example</button><p class="puff-foot" id="puff-foot"></p></div></div>
+</div>
+<div class="demo-right"><div class="phone"><iframe id="app-frame" title="Working Wane app with Lucía’s simulated history" src="about:blank"></iframe></div><nav class="demo-steps" aria-label="Demo app screens"><button data-step="0"><kbd>1</kbd>Today</button><button data-step="1"><kbd>2</kbd>Why</button><button data-step="2"><kbd>3</kbd>Plan</button><button data-step="3"><kbd>4</kbd>Week</button><button data-step="4"><kbd>5</kbd>Recipe</button></nav></div>
+</section>
+<section class="slide s-close" data-title="What we need to learn next" data-seconds="20" data-notes="The app is live with a first engine. Next: engine fixes, clip tests and adult interviews. Our question for you: is choosing the next strength the right problem to solve first, or is simply seeing the habit more valuable? We are testing both directions. Thank you.">
+<div class="col"><h2>A working app.<br>A clear next test.</h2><div class="readiness"><div><span>Built</span><p>The app and a first decision engine</p></div><div><span>Next</span><p>Engine fixes, clip tests, adult interviews</p></div></div><p class="closing-question">What matters more first:<br><b>choosing the next strength</b><br>or <b>seeing the habit?</b></p></div>
+<figure class="qr"><a href="https://rafh685.github.io/wane-app/" target="_blank" rel="noreferrer"><img src="/wane-pitch-site/app-qr.png" alt="Scan to open the Wane app" width="300" height="300"></a><figcaption>Try Wane<span class="mono">rafh685.github.io/wane-app</span></figcaption><p>Real today: app, engine software, clip prototype. Simulated: Marta and Lucía. Not yet tested in people.</p></figure>
+</section>
+      <!-- Backup slides, for questions (not in the 3 minutes) -->
+      <section class="slide s-backup s-sources" data-backup data-title="Sources" data-notes="Every number on the slides, with who was asked and when.">
+        <h2>Sources</h2>
+<div class="source-grid">
+<div><span class="source-no">01</span><h3>Quit attempts among tank users</h3><p>26.90% reported trying to quit by cutting back gradually. 13.63% reported trying to quit completely. These are separate past-year questions, so people could answer yes to both.</p><cite>Palmer et al., <i>Tobacco Control</i>, 2024. US PATH Wave 5, Dec 2018 to Nov 2019. 2,922 adult regular vapers (from 34,309 PATH adults). Tank subgroup 1,276. Weighted estimates, Table 1.</cite><a href="https://doi.org/10.1136/tc-2022-057710" target="_blank" rel="noreferrer">doi.org/10.1136/tc-2022-057710</a></div>
+<div><span class="source-no">02</span><h3>Lowering strength alone</h3><p>Over 12 months, experienced vapers went from 13.83 to 9.91 mg/ml on average and from 4.44 to 6.84 ml of liquid a day (+54%). Their saliva cotinine, a nicotine marker, did not fall. Use of more powerful (sub-ohm) devices also rose.</p><cite>Soar K, Kimber C, McRobbie H, Dawkins LE. <i>Addictive Behaviors</i> 2019;91:102-105. 27 UK vapers. One small study.</cite><a href="https://doi.org/10.1016/j.addbeh.2018.07.019" target="_blank" rel="noreferrer">doi.org/10.1016/j.addbeh.2018.07.019</a></div></div>
+      </section>
+
+      <section class="slide s-backup s-sources" data-backup data-title="Sources, continued" data-notes="Spain and EU numbers, and what our simulated examples do and do not show.">
+        <h2>Sources, continued</h2>
+<div class="source-grid three">
+<div><span class="source-no">03</span><h3>Vaping in Spain</h3><p>5% of people aged 15 to 64 used an e-cigarette in the last 30 days in 2024, up from 2% in 2018.</p><cite>OEDA, EDADES 2018 to 2024, e-cigarette infographic (Ministerio de Sanidad). EDADES 2024: 26,878 people interviewed at home, Feb to Jun 2024.</cite><a href="https://pnsd.sanidad.gob.es/profesionales/sistemasInformacion/sistemaInformacion/pdf/2025/OEDA_EDADES2024_Infografia_cigarrillos_electronicos.pdf" target="_blank" rel="noreferrer">pnsd.sanidad.gob.es</a></div>
+<div><span class="source-no">04</span><h3>Refillable tanks in the EU</h3><p>51% of people who vape now use a refillable tank device every day (11% a pod device).</p><cite>European Commission, Special Eurobarometer 539, May to June 2023, table QD7a. 814 current e-cigarette users in the EU 27. Small subsample.</cite><a href="https://europa.eu/eurobarometer/surveys/detail/2995" target="_blank" rel="noreferrer">europa.eu/eurobarometer</a></div>
+<div><span class="source-no">05</span><h3>What the Wane examples establish</h3><p>Marta and Lucía are simulated people. Their plans are generated by the Wane engine. The app gave the same answer as our original model on 56 checked decisions.</p><cite>A software consistency check is not a clinical test. Neither the research nor our simulation shows Wane helps people quit.</cite><p class="source-limit">Still to test: Spanish customer demand, hardware reliability, willingness to pay and outcomes in people.</p></div></div>
+      </section>
+
+      <section class="slide s-backup s-limits" data-backup data-title="Current model limits" data-notes="In simulation, our 4 October stress tests found that increased puffing and earlier first use did not trigger the intended response. Holds tracked bedtime, and missing data caused wrong decisions. These limits are known. Planned fixes after the bootcamp need new tests, then supervised validation in people.">
+<h2>Current model limits</h2><div class="two"><div><h3>Known limits</h3><p>In simulation, rising total puffing did not change the plan.</p><p>In simulation, holds tracked bedtime more than increased puffing.</p><p>With no puff data, it still steps down every week.</p><p>Puff timing is a signal, not a direct measure of nicotine absorbed.</p></div><div><h3>Next model work</h3><p>Respond to changes relative to each person’s usual pattern.</p><p>Re-test increased puffing after a step down.</p><p class="muted">Planned after the bootcamp. Clinical outcomes remain untested.</p></div></div><cite>Our internal stress tests, 4 Oct 2026. Stress-test findings are in simulation.</cite>
+</section>
+
+      <section class="slide s-backup s-directions" data-backup data-title="Two directions" data-notes="Our mentor asked us to keep two directions open. A: control the nicotine. B: make the habit visible with tracking and progress. The app already has pieces of both.">
+        <h2>Two directions we are testing</h2>
+        <div class="two">
+          <div class="reveal"><h3>A. Nicotine control</h3><p>For adults who already try to cut down: the step-down decision is made for them, from their own puffs. The engine does not yet react to more puffing.</p><p class="muted">In the app: weekly strength, holds, half steps, the mixing recipe.</p></div>
+          <div class="reveal"><h3>B. Puff tracking with progress</h3><p>For adults who want to see their habit: when they vape most, and whether it changes.</p><p class="muted">In the app: hardest hours, the week's pattern, progress milestones.</p></div>
+        </div>
+        <p class="next-phase">Both are hypotheses. The interviews decide which problem comes first.</p>
+      </section>
+
+      <section class="slide s-backup s-safety" data-backup data-title="Safety" data-notes="These safeguards do not establish clinical safety or effectiveness. This is not medical advice.">
+        <h2>Product boundaries and safeguards</h2>
+        <ul class="status">
+          <li><i data-icon="shield-check"></i><div><b>Adults only.</b> Setup starts with "I'm 18 or older and I vape". Wane never sells nicotine.</div></li>
+          <li><i data-icon="shield-check"></i><div><b>Never a raise.</b> The strength only holds or goes down.</div></li>
+          <li><i data-icon="shield-check"></i><div><b>Pregnancy (or trying to be) or breastfeeding stops the plan:</b> changing nicotine then should be planned with a doctor or midwife. Daily smokers get a warning first.</div></li>
+          <li><i data-icon="shield-check"></i><div><b>Your data stays on your phone.</b> No account needed.</div></li>
+        </ul>
+      </section>
+
+      <section class="slide s-backup s-pay" data-backup data-title="Who pays" data-notes="Who pays is still a hypothesis. We start with the vaper, and test insurers and employers later.">
+        <h2>Who pays: our first hypothesis</h2>
+        <div class="two">
+          <div><h3>First: the vaper</h3><p>Our proposed buyer is the adult using Wane. Interviews must test whether they would pay, how much, and for how long.</p></div>
+          <div><h3>Later, to test</h3><p>Insurers and employers. We need evidence before we claim either would pay.</p></div>
+        </div>
+      </section>
+
+      <section class="slide s-backup s-alts" data-backup data-title="What people use today" data-notes="Anthony asked for the alternatives. Most vapers have never tried to quit vaping. Some lower the strength on their own. Most quit apps are built for smokers; vaping apps need each puff tapped by hand. Puff counters count but give no plan. In Spain, funded medicines are only for heavy smokers.">
+        <h2>What people use today</h2>
+        <ul class="alts">
+          <li><b>No quit attempt.</b> Only 36% of current vapers in Great Britain have ever tried to quit vaping.</li>
+          <li><b>Their own step-down.</b> 27% of current vapers in Great Britain have lowered their strength over time. We found no tool that links the step-down to what happens next.</li>
+          <li><b>Quit apps</b> (Smoke Free, Kwit, QuitNow). Built for smokers; nothing measures vaping automatically.</li>
+          <li><b>Vaping apps</b> (Puff Count, Puffless, Vaporate). Each puff is tapped by hand; fixed calendars.</li>
+          <li><b>Puff counters</b> (some pod devices, the JUUL2 app). They count puffs; no plan to lower nicotine.</li>
+          <li><b>Medicines.</b> In Spain, funded only for people who smoke 10 or more cigarettes a day with high dependence; patches are not funded.</li>
+        </ul>
+        <cite class="alts-cite">ASH Smokefree GB survey, YouGov, 13,259 adults, Feb to Mar 2026. Spanish medicines register BIFIMED, read 3 Oct 2026. App store and product pages, 3 Oct 2026.</cite>
+      </section>
+
+    </div>
+  </main>
+
+  <div class="presenter" id="presenter" hidden>
+    <div class="p-top"><span id="p-timer" class="p-timer">3:00</span><span id="p-count"></span><button type="button" id="p-reset">Reset timer</button></div>
+    <h2 id="p-title"></h2>
+    <p id="p-notes" class="p-notes"></p><p id="p-cue" class="p-cue"></p>
+    <p class="p-next">Next: <span id="p-next"></span></p>
+    <p class="p-keys">Keys: arrows or clicker to move, 1 to 5 app screens, W welcome screen, R reset Lucía, P puff, C clip, T theme, F full screen, B backup slides</p>
+  </div>
+
+</body>
+</html>

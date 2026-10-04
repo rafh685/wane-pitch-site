@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <meta name="description" content="Wane lowers your nicotine a little every week, from how you actually vape." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0E2B26" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Wane" />
+    <!-- theme before first paint, so Light never flashes dark; iPhone reads the status bar style only at launch, so Light gets dark status bar text from the next launch -->
+    <script>try{var c=localStorage.getItem('wane.theme'),t=c==='auto'?(matchMedia('(prefers-color-scheme: light)').matches?'light':'pine'):c;if(t==='light'||t==='night'){document.documentElement.dataset.theme=t;document.querySelector('meta[name="theme-color"]').content=t==='light'?'#eef3f0':'#0b0e0d'}if(t==='light')document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]').content='default'}catch(e){}</script>
+    <title>Wane</title>
+    <script type="module" crossorigin src="./assets/index-DzU0a_hb.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CUtDVJuO.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
