@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wane · Monday preview</title>
+  <title>Wane · Qualifying pitch</title>
   <link rel="icon" href="/wane-pitch-site/app/favicon.svg">
   <meta name="theme-color" content="#eef3f0">
-  <script type="module" crossorigin src="/wane-pitch-site/assets/index-BnN90JTo.js"></script>
-  <link rel="stylesheet" crossorigin href="/wane-pitch-site/assets/index-CV7G5bU-.css">
+  <script type="module" crossorigin src="/wane-pitch-site/assets/index-CzTnlNg3.js"></script>
+  <link rel="stylesheet" crossorigin href="/wane-pitch-site/assets/index-O1-m-Q8W.css">
 </head>
 <body>
   <main class="viewport">
@@ -15,114 +15,296 @@
       <div class="slide-footer"><span>Wane</span><span id="slide-count"></span></div>
       <div class="moon-mark" id="moon-mark" aria-hidden="true"></div>
 
-<section class="slide s-cover" data-title="Wane" data-seconds="10" data-notes="Hi, we're Wane. Cutting nicotine on your own is harder than it looks.">
+<section class="slide s-intro" data-title="Wane logo" data-seconds="0" data-notes="White page. Arrow once: the logo plays (about 2 seconds). Arrow again: the cover, and Ilian starts.">
+<svg class="intro-logo" viewBox="-49 0 800 240" role="img" aria-label="Wane">
+<defs>
+<mask id="intro-phase" maskUnits="userSpaceOnUse" x="0" y="0" width="220" height="240"><rect width="220" height="240" fill="white"/><circle class="logo-shadow" cx="146" cy="120" r="90" fill="black"/></mask>
+<clipPath id="intro-word"><rect class="logo-wipe" x="212" y="60" width="500" height="120"/></clipPath>
+</defs>
+<circle class="logo-disc" cx="110" cy="120" r="90" mask="url(#intro-phase)"/>
+<g clip-path="url(#intro-word)"><text class="logo-word" x="218" y="170">WANE</text></g>
+</svg>
+</section>
+
+<!-- 1 Cover + hook (Ilian, 15 s) -->
+<section class="slide s-cover" data-title="Cover and hook" data-seconds="15" data-notes="ILIAN: We track our sleep, our steps, our heartbeat. Everything except the thing that’s killing us. [beat] We’re Wane: the tracker for vaping. A small clip on the vape, and an app that shows you your vaping habit.">
 <div class="cover-text">
  <div class="wordmark">Wane<span class="moon-row" id="moon-row" aria-hidden="true"></span></div>
- <h1>A weekly plan<br>for <span>less nicotine.</span></h1>
- <p class="lede">For adults who<br>already vape.</p>
+ <h1>The tracker<br>for <span>vaping.</span></h1>
+ <p class="hook">We track our sleep, our steps, our heartbeat. Everything except the thing that’s killing us.</p>
 </div>
-<figure class="cover-figure"><svg class="cover-line" id="cover-art" aria-hidden="true"></svg><figcaption>Simulated example</figcaption></figure>
+<figure class="cover-figure">
+ <ul class="tracked">
+  <li class="reveal"><i data-icon="moon"></i><span>Sleep</span><b>7 h 32 min</b></li>
+  <li class="reveal"><i data-icon="footprints"></i><span>Steps</span><b>8,214</b></li>
+  <li class="reveal"><i data-icon="heartbeat"></i><span>Heartbeat</span><b>61 bpm</b></li>
+  <li class="reveal gap"><i data-icon="cloud"></i><span>Vaping</span><b>No data</b></li>
+ </ul>
+ <figcaption>Illustration</figcaption>
+</figure>
 <footer class="cover-foot">Rafael, Ilian, Ismael &amp; Samy <span>Team 38 / IE Tech Venture Bootcamp</span></footer>
 </section>
-<section class="slide s-problem" data-title="The customer we are testing" data-seconds="32" data-notes="Think of someone who swapped cigarettes for a vape years ago, and now wants less nicotine. That is our starting customer: an adult who vapes daily on a refillable vape. So they buy a weaker bottle. In one study, as vapers lowered their strength on their own, they used fifty-four percent more liquid, and their nicotine level did not fall. Stepping down alone can quietly fail: same nicotine, more vaping.">
-<div class="col"><p class="eyebrow">Our starting customer (hypothesis)</p><h2>Already vaping.<br>Ready to cut down.</h2><p class="lede">An adult who vapes daily,<br>uses a refillable device,<br>and wants less nicotine.</p></div>
-<div class="decision"><p class="decision-label">In one study, as vapers lowered their strength</p><p class="pain-number">+54%</p><p class="pain-text">more liquid used.<br>Their nicotine level did not fall.</p><cite class="pain-cite">One study: 27 UK vapers over 12 months, 13.8 to 9.9 mg/ml. Soar et al., 2019.</cite><div class="decision-options"><span>Lower it?</span><span>Stay here?</span></div><p class="decision-note">Same nicotine. More vaping.</p></div>
-</section>
-<section class="slide s-evidence" data-title="Evidence for this starting point" data-source="https://doi.org/10.1136/tc-2022-057710" data-seconds="20" data-notes="And cutting back is something people already try. Among US tank users, twenty-seven percent tried to quit by cutting back gradually, against fourteen percent who tried to quit completely. And half of EU vapers use a refillable tank every day.">
-<header><h2>Cutting back is already<br>a route people try</h2><p class="lede">US adult tank users, quit attempts in the past year</p></header>
-<div class="evidence-pair"><div class="evidence-number"><strong>26.9<span>%</span></strong><p>Tried to quit by<br><b>cutting back gradually</b></p></div><div class="evidence-number secondary"><strong>13.6<span>%</span></strong><p>Tried to quit<br><b>completely</b></p></div></div>
-<footer class="evidence-source"><p>People could report both. This measures attempts, not success.</p><cite>US PATH, 2018 to 2019. Tank subgroup: 1,276 adults. Palmer et al., 2024, Table 1. Sources in the backup slides.</cite></footer>
-<div class="evidence-more"><div><strong>2% → 5%</strong><p>of people in Spain aged 15 to 64 vaped in the last 30 days (2018, then 2024)</p><cite>EDADES 2018 and 2024, Ministerio de Sanidad. 2024 sample: 26,878.</cite></div><div><strong>51%</strong><p>of EU vapers use a refillable tank every day</p><cite>Special Eurobarometer 539, May to June 2023. 814 current vapers.</cite></div></div>
-</section>
-<section class="slide s-solution" data-title="How Wane works" data-seconds="26" data-notes="Wane has three parts. A small clip is built to record every puff: when, and how long. Each week, the app decides: a full step down, a half step, or hold. Then it gives one recipe to mix the next bottle. For the first three weeks nothing changes: Wane just learns the person's habit.">
-<header><h2>Puff patterns inform<br>the next weekly step</h2></header>
-<ol class="flow"><li><span class="flow-number">01</span><h3>Record</h3><p>A small clip is designed to record<br>when and how long you puff.</p><span class="flow-status">Clip prototype</span></li><li><span class="flow-number">02</span><h3>Decide</h3><p>The app chooses a step down,<br>a smaller step, or a hold.</p><span class="flow-status">Working app</span></li><li><span class="flow-number">03</span><h3>Mix</h3><p>One weekly recipe for<br>the next bottle’s strength.</p><span class="flow-status">Working app</span></li></ol>
-</section>
-<section class="slide s-chart" data-title="How the plan adapts" data-seconds="12" data-notes="Same engine, two simulated people. On hard weeks it holds, so Lucía reaches zero nine weeks after Marta.">
-<header class="chart-head"><h2>The plan can pause</h2><p class="lede">Two simulated people. The same decision engine.</p></header>
-<figure class="chart"><svg id="plan-chart" role="img" aria-label="In simulation, Marta reaches zero strength in week 26. Lucía has holds and smaller steps and reaches zero in week 35."></svg><figcaption>In simulation. Weekly strengths joined by curves. Vertical scale stretched near zero.<br>Weeks include three learning weeks.</figcaption></figure>
-</section>
-<section class="slide s-demo" data-title="The working app" data-seconds="45" data-notes="[While pulling air through the tube] No vape, no nicotine: just air through our clip. [Number appears] That puff just came from our clip, over Bluetooth. Every puff like this goes into the week that decides the next strength. [If the clip fails: hold P and say: This one is simulated; it is the same message the clip sends.] [1] This is Lucía, a simulated user. This week she is holding at 2.7. [5] And here is exactly what to mix. One clear action a week. Everything here is live code; Lucía, and the data our engine learned from, are simulated.">
-<div class="demo-left"><header><p class="eyebrow">Working app / simulated person</p><h2>One clear<br>next action</h2></header>
-<div class="puffs" id="puffs"><div class="clip-row"><span class="chip" id="clip-chip">Simulated input</span><button type="button" class="btn" id="clip-connect"><i data-icon="bluetooth"></i>Connect clip</button></div>
-<div class="puff-numbers"><div><span class="big" id="puff-count">0</span><span class="label">puffs this demonstration</span></div><div><span class="big" id="puff-last">-</span><span class="label">last puff / seconds</span></div></div>
-<div class="puff-bars" id="puff-bars" aria-label="Recent demonstration puff durations"></div><div class="puff-bottom"><button type="button" class="btn ghost" id="puff-sim">Hold to puff (P)</button><button type="button" class="sample-btn" id="puff-sample">Play 2 s example</button><p class="puff-foot" id="puff-foot"></p></div></div>
+
+<!-- 2 Problem (Raf, 25 s) -->
+<section class="slide s-problem" data-title="Problem" data-seconds="25" data-notes="RAF: People who vape don’t know how much, when or why. The only record is memory, and memory is wrong. A device logged 2.2 times more puffs than people reported; another study found people over-report. Half of people who smoke and vape say they vape continuously throughout the day. In Spain, 5% of people aged 15 to 64 vaped last month, up from 2% in 2018.">
+<header><p class="eyebrow">The problem</p><h2>Vaping is a daily habit<br>with no data.</h2><p class="lede">The only record is memory, and memory is wrong.</p></header>
+<div class="facts">
+ <div class="fact"><strong>2.2×</strong><p>more puffs measured by a device than people reported.</p><cite>Li 2021, US, small study.</cite></div>
+ <div class="fact"><strong>49%</strong><p>say they vape “continuously throughout the day”.</p><cite>Martinez 2020, US, people who smoke and vape.</cite></div>
+ <div class="fact"><strong>2% → 5%</strong><p>of Spaniards aged 15 to 64 vaped last month (2018 → 2024).</p><cite>EDADES 2024, Spain’s official survey.</cite></div>
 </div>
-<div class="demo-right"><div class="phone"><iframe id="app-frame" title="Working Wane app with Lucía’s simulated history" src="about:blank"></iframe></div><nav class="demo-steps" aria-label="Demo app screens"><button data-step="0"><kbd>1</kbd>Today</button><button data-step="1"><kbd>2</kbd>Why</button><button data-step="2"><kbd>3</kbd>Plan</button><button data-step="3"><kbd>4</kbd>Week</button><button data-step="4"><kbd>5</kbd>Recipe</button></nav></div>
 </section>
-<section class="slide s-close" data-title="What we need to learn next" data-seconds="25" data-notes="The app is live with a first engine. Next: engine fixes, clip tests and adult interviews. Our question for you: is choosing the next strength the right problem to solve first, or is simply seeing the habit more valuable? We are testing both directions. Thank you.">
-<div class="col"><h2>A working app.<br>A clear next test.</h2><div class="readiness"><div><span>Built</span><p>The app and a first decision engine</p></div><div><span>Next</span><p>Engine fixes, clip tests, adult interviews</p></div></div><p class="closing-question">What matters more first:<br><b>choosing the next strength</b><br>or <b>seeing the habit?</b></p></div>
-<figure class="qr"><a href="https://rafh685.github.io/wane-app/" target="_blank" rel="noreferrer"><img src="/wane-pitch-site/app-qr.png" alt="Scan to open the Wane app" width="300" height="300"></a><figcaption>Try Wane<span class="mono">rafh685.github.io/wane-app</span></figcaption><p>Real today: app, engine software, clip prototype. Simulated: Marta and Lucía. Not yet tested in people.</p></figure>
-</section>
-      <!-- Backup slides, for questions (not in the 3 minutes) -->
-      <section class="slide s-backup s-sources" data-backup data-title="Sources" data-notes="Every number on the slides, with who was asked and when.">
-        <h2>Sources</h2>
-<div class="source-grid">
-<div><span class="source-no">01</span><h3>Quit attempts among tank users</h3><p>26.90% reported trying to quit by cutting back gradually. 13.63% reported trying to quit completely. These are separate past-year questions, so people could answer yes to both.</p><cite>Palmer et al., <i>Tobacco Control</i>, 2024. US PATH Wave 5, Dec 2018 to Nov 2019. 2,922 adult regular vapers (from 34,309 PATH adults). Tank subgroup 1,276. Weighted estimates, Table 1.</cite><a href="https://doi.org/10.1136/tc-2022-057710" target="_blank" rel="noreferrer">doi.org/10.1136/tc-2022-057710</a></div>
-<div><span class="source-no">02</span><h3>Lowering strength alone</h3><p>Over 12 months, experienced vapers went from 13.83 to 9.91 mg/ml on average and from 4.44 to 6.84 ml of liquid a day (+54%). Their saliva cotinine, a nicotine marker, did not fall. Use of more powerful (sub-ohm) devices also rose.</p><cite>Soar K, Kimber C, McRobbie H, Dawkins LE. <i>Addictive Behaviors</i> 2019;91:102-105. 27 UK vapers. One small study.</cite><a href="https://doi.org/10.1016/j.addbeh.2018.07.019" target="_blank" rel="noreferrer">doi.org/10.1016/j.addbeh.2018.07.019</a></div></div>
-      </section>
 
-      <section class="slide s-backup s-sources" data-backup data-title="Sources, continued" data-notes="Spain and EU numbers, and what our simulated examples do and do not show.">
-        <h2>Sources, continued</h2>
+<!-- 3 Who it's for (Ilian, 20 s). Section 1 of "ICP for the tracker, checked (5 Oct).md", unchanged. -->
+<section class="slide s-icp" data-title="Who it’s for" data-seconds="20" data-notes="ILIAN: Our customer: adults 25 to 44 who vape every day; in Britain, most daily vapers are ex-smokers. Almost half of Spaniards aged 25 to 34 use a connected wearable, such as a smartwatch. Their steps and sleep are tracked. On the refillable vapes most adults use, nothing shows them their vaping over days and weeks without typing it in. [If asked: our hypothesis, testing this week, is that they want to see how much and when they vape. Ideally on a refillable vape: about half of vapers in Britain and the EU. The wearable figure counts any connected wearable, such as a smartwatch.]">
+<header><p class="eyebrow">Who it’s for</p>
+<h2>Adults 25 to 44 who vape every day<br>and already use a smartwatch.</h2></header>
+<div class="icp-grid">
+ <div><strong>7.8%</strong><p>of British adults vape every day: 4.2 million.</p><cite>ASH / YouGov 2026; our calculation.</cite></div>
+ <div><strong>7 in 10</strong><p>British daily vapers are ex&#8209;smokers.</p><cite>ASH 2026; our calculation.</cite></div>
+ <div><strong>47.6%</strong><p>of Spaniards aged 25 to 34 use a smartwatch or other wearable.</p><cite>Eurostat 2024.</cite></div>
+ <div><strong>51%</strong><p>of EU vapers use a refillable vape every day.</p><cite>Eurobarometer 2023.</cite></div>
+</div>
+<p class="small-print">Published surveys. Our own interviews start this week.</p>
+</section>
+
+<!-- 4 Why now (Raf, 20 s). Lines from why-now-final.md (independently checked 9/10, 5 Oct), unchanged. Frame: tracking is mainstream and here to stay; never "rising fast". -->
+<section class="slide s-whynow" data-title="Why now" data-seconds="20" data-notes="RAF: More than a third of Spaniards now use a smartwatch, fitness band or similar, up from under a quarter in 2020. Almost one in three is a gym member. Nearly seven in ten look up health information online. Their watch counts their steps. It does not count their puffs.">
+<header><p class="eyebrow">Why now</p><h2>People care more about<br>fitness and health.</h2></header>
+<div class="now-grid">
+ <div><strong>37%</strong><div class="then" aria-hidden="true"><span style="--w:.23"><b>2020</b> 23%</span><span class="on" style="--w:.37"><b>2024</b> 37%</span></div><p>of Spaniards use a smartwatch or other wearable.</p><cite>Eurostat 2024.</cite></div>
+ <div><strong>Almost 1 in 3</strong><div class="then" aria-hidden="true"><span style="--w:.176"><b>2015</b> 18%</span><span class="on" style="--w:.307"><b>2024/25</b> 31%</span></div><p>Spaniards is a gym member.</p><cite>Spanish sports habits survey 2024/25.</cite></div>
+ <div><strong>Nearly 7 in 10</strong><div class="then" aria-hidden="true"><span style="--w:.519"><b>2015</b> 5 in 10</span><span class="on" style="--w:.682"><b>2025</b> nearly 7 in 10</span></div><p>Spaniards look up health information online.</p><cite>Eurostat 2025.</cite></div>
+</div>
+<p class="now-line">Their watch counts their steps. <b>It does not count their puffs.</b></p>
+</section>
+
+<!-- 5 Solution (Ilian, 25 s) -->
+<section class="slide s-solution" data-title="Solution: Whoop for vaping" data-seconds="25" data-notes="ILIAN: Wane is Whoop for vaping. The clip captures every puff, its time and its length, automatically. The app turns that into your habits: puffs per day, puff length, hardest hours, first puff, night puffs. Why measure? People who track their progress reach their goals more often. And why length? In a lab machine study, nicotine from the same number of puffs varied over 50-fold, and longer puffs delivered more. Tap-to-log apps can’t see length. [If asked: the clip measures how much and when, not why. The data stays on your phone.]">
+<header><p class="eyebrow">The solution</p><h2>Whoop for vaping</h2></header>
+<ol class="flow4">
+ <li><span class="flow-number">01</span><h3>Capture</h3><p>A clip records every puff.</p></li>
+ <li><span class="flow-number">02</span><h3>Track</h3><p>Straight to your phone.</p></li>
+ <li><span class="flow-number">03</span><h3>Analyse</h3><p>Patterns over days.</p></li>
+ <li class="flow-end"><span class="flow-number">04</span><h3>Your vaping habits</h3><ul class="habits"><li>Puffs per day</li><li>Puff length</li><li>Hardest hours</li><li>First puff</li><li>Night puffs</li></ul></li>
+</ol>
+<div class="why-data solo">
+ <div class="claim"><p><b>Every puff’s time and length. Automatic.</b> Tap-to-log apps can’t see length.</p></div>
+</div>
+</section>
+
+<!-- 6 Live demo (Raf, 50 s): the whole demo on one slide, with the app on a phone -->
+<section class="slide s-demo" data-title="Live demo" data-seconds="50" data-notes="RAF: [The live sensor is already on: S during setup.] This is live. No vape, no nicotine: just air through our clip. [Pull air through the tube, about 2 seconds.] That’s the pressure inside the clip, read ten times a second. Over the start line, a puff begins; under the end line, it ends, so small wobbles don’t count: on the bench, five minutes untouched gave zero false puffs. [Point at the phone.] And this is the app: one puff today, its length, the average, the total, and it lands in this hour. [Pull again, longer.] A longer puff, and the clip sees it. The pale bars are a simulated example day; the teal is live. Today it runs on a cable; the clip also sends over Bluetooth, and the data stays on the phone. [If nothing moves: hold P for 2 seconds and say: This one is simulated, and the panel marks it as simulated.]">
+<div class="demo-left">
+ <header><p class="eyebrow">Live demo · air through a tube, no vape, no nicotine</p><h2>Every puff,<br>tracked live</h2></header>
+ <div class="sensor" id="sensor">
+  <p class="sensor-cap"><span>Live pressure inside the clip (Pa)</span><span id="sensor-now" class="mono"></span></p>
+  <canvas id="sensor-canvas" width="1460" height="580" role="img" aria-label="Live pressure drop inside the clip over the last 10 seconds, with the puff start and end lines"></canvas>
+  <p class="sensor-status" id="sensor-status"></p>
+ </div>
+ <ul class="how-strip"><li><b>10</b> readings a second</li><li>A puff: over <b>100 Pa</b>, ends under <b>50 Pa</b></li><li><b>0</b> false puffs in 5 min on the bench</li></ul>
+ <div class="demo-controls">
+  <button type="button" class="btn" id="sensor-connect"><i data-icon="usb"></i><span>Live sensor (S)</span></button>
+  <button type="button" class="btn ghost" id="puff-sim">Hold to puff (P)</button>
+  <button type="button" class="sample-btn" id="puff-sample">Simulated 2 s puff</button>
+  <button type="button" class="sample-btn" id="clip-connect"><span>Bluetooth (C)</span></button>
+ </div>
+ <p class="puff-foot" id="puff-foot"></p>
+</div>
+<div class="phone" aria-label="The Wane app on a phone: today's tracking screen">
+ <div class="phone-screen">
+  <div class="phone-status"><span class="mono" id="phone-time">14:00</span><span class="phone-island" aria-hidden="true"></span><span class="phone-batt" aria-hidden="true"></span></div>
+  <div class="tracker" id="tracker">
+   <div class="tracker-head"><div><p class="app-name">Wane</p><h3>Today</h3></div><span class="chip" id="clip-chip">No clip connected</span></div>
+   <div class="stats" aria-live="polite">
+    <div class="stat-main"><span class="big" id="t-count">0</span><span class="label">puffs today</span></div>
+    <div><span class="big"><span id="t-last">-</span><small>s</small></span><span class="label" id="t-last-label">last puff</span></div>
+    <div><span class="big"><span id="t-avg">-</span><small>s</small></span><span class="label">average</span></div>
+    <div><span class="big"><span id="t-total">0</span><small>s</small></span><span class="label">total time</span></div>
+   </div>
+   <p class="t-mix" id="t-mix"></p>
+   <div class="hours">
+    <div class="hours-head"><span>By hour</span></div>
+    <div class="hour-bars" id="hour-bars" role="img" aria-label="Puffs per hour today"></div>
+    <div class="hour-axis" id="hour-axis"></div>
+    <div class="legend"><span><i class="k-live"></i>Live</span><span><i class="k-sim"></i>Simulated puff</span><span><i class="k-ex"></i>Simulated example</span></div>
+   </div>
+   <ol class="puff-log" id="puff-log" aria-label="Latest puffs"></ol>
+  </div>
+  <p class="phone-note">App screen, live from the clip. Prototype.</p>
+ </div>
+</div>
+</section>
+
+
+<!-- 7 Market (Raf, 30 s) -->
+<section class="slide s-market" data-title="Market: a blue ocean" data-seconds="30" data-notes="RAF: A tracking market exists. Not for vaping. Tap-to-log apps make you type every puff. Puff counters on some vapes count, but only on that device, with no length. Wane counts automatically, sees each puff’s length, shows your habit over days, and works with your own refillable vape. Our first segment: daily vapers aged 25 to 44 who already use a wearable. By our estimate, 0.6 to 1.3 million in the EU. The model to test: clip plus app subscription. [If asked: the sizes are our estimates; no survey has measured how many vapers wear a tracker. The clip is a prototype, designed for refillable vapes, and not yet fitted to one. The price is a hypothesis.]">
+<header><p class="eyebrow">Market: a blue ocean</p><h2>A tracking market exists.<br>Not for vaping.</h2></header>
+<div class="market">
+ <div class="grid-wrap">
+ <table class="mgrid">
+  <thead><tr><th scope="col"><span class="sr">Feature</span></th><th scope="col">Tap-to-log apps</th><th scope="col">Puff counters on vapes</th><th scope="col" class="wane">Wane</th></tr></thead>
+  <tbody>
+   <tr><th scope="row">Counts automatically</th><td><i data-icon="x" aria-label="No"></i></td><td><i data-icon="check" aria-label="Yes"></i></td><td class="wane"><i data-icon="check" aria-label="Yes"></i></td></tr>
+   <tr><th scope="row">Each puff’s length</th><td><i data-icon="x" aria-label="No"></i></td><td><i data-icon="x" aria-label="No"></i><small>count only</small></td><td class="wane"><i data-icon="check" aria-label="Yes"></i></td></tr>
+   <tr><th scope="row">Your habit over days</th><td><small class="solo">typed by hand</small></td><td><i data-icon="x" aria-label="No"></i></td><td class="wane"><i data-icon="check" aria-label="Yes"></i></td></tr>
+   <tr><th scope="row">Works with your own vape</th><td><i data-icon="check" aria-label="Yes"></i></td><td><small class="solo">only that device</small></td><td class="wane"><i data-icon="check" aria-label="Yes"></i><small>refillables</small></td></tr>
+  </tbody>
+ </table>
+ <p class="grid-note">Prototype, designed for refillable vapes.</p>
+ </div>
+ <aside class="sizes">
+  <p class="sizes-label">Daily vapers aged 25 to 44 who already use a wearable</p>
+  <div class="size"><strong>about 0.6 to 1.3 million</strong><span>across the EU</span></div>
+  <div class="size"><strong>about 0.5 to 0.8 million</strong><span>in Great Britain</span></div>
+  <div class="size"><strong>about 27,000 to 75,000</strong><span>in Spain</span></div>
+  <cite>Our estimates.</cite>
+ </aside>
+</div>
+<p class="model-line">Model to test: <b>clip + app subscription</b></p>
+</section>
+
+<!-- 8 Vision + close (Ilian, 25 s) -->
+<section class="slide s-close" data-title="Vision and close" data-seconds="25" data-notes="ILIAN: Today: the tracker, like Whoop. Year two: the coach. It’s an engine that steps nicotine down week by week. It’s already built and stress-tested, in simulation only. Next: fit the clip to a real vape, and put it in the hands of adult vapers. Our question for you: is tracking alone worth paying for, or only with the coach? Thank you.">
+<div class="col">
+ <p class="eyebrow">Vision</p>
+ <div class="roadmap">
+  <div class="stage-now"><span class="when">Today</span><h3>The tracker, like Whoop.</h3><p>Every puff, and your habit over days.</p></div>
+  <div class="stage-later"><span class="when">Year 2</span><h3>The coach.</h3><p>Steps nicotine down, week by week. Built; tested in simulation only.</p></div>
+ </div>
+ <p class="closing-question">Our question for you:<br><b>is tracking alone worth paying for,<br>or only with the coach?</b></p>
+</div>
+<figure class="qr"><a href="https://rafh685.github.io/wane-app/" target="_blank" rel="noreferrer"><img src="/wane-pitch-site/app-qr.png" alt="Scan to open the Wane app" width="300" height="300"></a><figcaption>Try the Wane app<span class="mono">rafh685.github.io/wane-app</span></figcaption></figure>
+</section>
+
+      <!-- Backup slides, for questions (B). Not in the 3:45. -->
+      <section class="slide s-backup s-sources" data-backup data-title="Sources: the problem" data-notes="Every number on the problem and solution slides, with who was asked and when.">
+        <h2>Sources: problem and solution</h2>
 <div class="source-grid three">
-<div><span class="source-no">03</span><h3>Vaping in Spain</h3><p>5% of people aged 15 to 64 used an e-cigarette in the last 30 days in 2024, up from 2% in 2018.</p><cite>OEDA, EDADES 2018 to 2024, e-cigarette infographic (Ministerio de Sanidad). EDADES 2024: 26,878 people interviewed at home, Feb to Jun 2024.</cite><a href="https://pnsd.sanidad.gob.es/profesionales/sistemasInformacion/sistemaInformacion/pdf/2025/OEDA_EDADES2024_Infografia_cigarrillos_electronicos.pdf" target="_blank" rel="noreferrer">pnsd.sanidad.gob.es</a></div>
-<div><span class="source-no">04</span><h3>Refillable tanks in the EU</h3><p>51% of people who vape now use a refillable tank device every day (11% a pod device).</p><cite>European Commission, Special Eurobarometer 539, May to June 2023, table QD7a. 814 current e-cigarette users in the EU 27. Small subsample.</cite><a href="https://europa.eu/eurobarometer/surveys/detail/2995" target="_blank" rel="noreferrer">europa.eu/eurobarometer</a></div>
-<div><span class="source-no">05</span><h3>What the Wane examples establish</h3><p>Marta and Lucía are simulated people. Their plans are generated by the Wane engine. The app gave the same answer as our original model on 56 checked decisions.</p><cite>A software consistency check is not a clinical test. Neither the research nor our simulation shows Wane helps people quit.</cite><p class="source-limit">Still to test: Spanish customer demand, hardware reliability, willingness to pay and outcomes in people.</p></div></div>
+<div><span class="source-no">01</span><h3>Memory against a device</h3><p>Over 30 days, a Bluetooth smart e&#8209;cigarette logged 34.85 puffs a day against 15.56 self-reported for the same days: about 2.2 times more.</p><cite>Li Z, Benowitz-Fredericks C, Ling PM, Cohen JE, Thrul J. <i>Nicotine &amp; Tobacco Research</i> 2021;23(5):842-848. 18 young adults aged 21 to 26, US, 2017. Small study; the device was not their usual vape.</cite><a href="https://doi.org/10.1093/ntr/ntaa205" target="_blank" rel="noreferrer">doi.org/10.1093/ntr/ntaa205</a></div>
+<div><span class="source-no">02</span><h3>Memory, the other way</h3><p>In a 4-hour video-observed session, people tended to over-report, and their usual puffs a day matched observed puffs only weakly (r = 0.43, where 1 is a perfect match).</p><cite>Dowd AN, et al. <i>Nicotine &amp; Tobacco Research</i> 2023. 57 adult daily vapers, Buffalo, US, 2020 to 2021. Small lab study.</cite><a href="https://doi.org/10.1093/ntr/ntad037" target="_blank" rel="noreferrer">doi.org/10.1093/ntr/ntad037</a></div>
+<div><span class="source-no">03</span><h3>No sessions to count</h3><p>Asked how many separate times a day they vape, 49.0% (1,418 of 2,896) chose “I vape continuously throughout the day”, the most common answer.</p><cite>Martinez U, et al. <i>Nicotine &amp; Tobacco Research</i> 2020;22(5):764-770. 2,896 US adults who smoke and vape weekly; online recruitment, Jul 2016 to Jul 2017. Not a random sample.</cite><a href="https://doi.org/10.1093/ntr/ntz043" target="_blank" rel="noreferrer">doi.org/10.1093/ntr/ntz043</a></div>
+<div><span class="source-no">04</span><h3>Vaping in Spain</h3><p>5% of people aged 15 to 64 used an e&#8209;cigarette in the last 30 days in 2024, up from 2% in 2018.</p><cite>OEDA, EDADES 2018 to 2024, e-cigarette infographic (Ministerio de Sanidad). EDADES 2024: 26,878 people interviewed at home, Feb to Jun 2024.</cite><a href="https://pnsd.sanidad.gob.es/profesionales/sistemasInformacion/sistemaInformacion/pdf/2025/OEDA_EDADES2024_Infografia_cigarrillos_electronicos.pdf" target="_blank" rel="noreferrer">pnsd.sanidad.gob.es</a></div>
+<div><span class="source-no">05</span><h3>Monitoring progress</h3><p>Across 138 randomised studies (19,951 people; mostly weight, activity and blood pressure, one on smoking), prompting people to monitor their progress improved goal attainment (effect size 0.40: small to medium).</p><cite>Harkin B, Webb TL, Chang BP, et al. <i>Psychological Bulletin</i> 2016;142(2):198-229. Not tested on vaping.</cite><a href="https://doi.org/10.1037/bul0000025" target="_blank" rel="noreferrer">doi.org/10.1037/bul0000025</a></div>
+<div><span class="source-no">06</span><h3>Puff length and nicotine</h3><p>Machine-made aerosol from one e&#8209;cigarette: across puff profiles, power and liquid strength (18 to 36 mg/ml), the nicotine from 15 puffs ranged more than 50&#8209;fold. Longer puffs gave more nicotine.</p><cite>Talih S, Balhas Z, Eissenberg T, et al. <i>Nicotine &amp; Tobacco Research</i> 2015;17(2):150-157, online 2014. A lab machine study, not people.</cite><a href="https://doi.org/10.1093/ntr/ntu174" target="_blank" rel="noreferrer">doi.org/10.1093/ntr/ntu174</a></div>
+</div>
       </section>
 
-      <section class="slide s-backup s-limits" data-backup data-title="Current model limits" data-notes="In simulation, our 4 October stress tests found that increased puffing and earlier first use did not trigger the intended response. Holds tracked bedtime, and missing data caused wrong decisions. These limits are known. Planned fixes after the bootcamp need new tests, then supervised validation in people.">
-<h2>Current model limits</h2><div class="two"><div><h3>Known limits</h3><p>In simulation, rising total puffing did not change the plan.</p><p>In simulation, holds tracked bedtime more than increased puffing.</p><p>With no puff data, it still steps down every week.</p><p>Puff timing is a signal, not a direct measure of nicotine absorbed.</p></div><div><h3>Next model work</h3><p>Respond to changes relative to each person’s usual pattern.</p><p>Re-test increased puffing after a step down.</p><p class="muted">Planned after the bootcamp. Clinical outcomes remain untested.</p></div></div><cite>Our internal stress tests, 4 Oct 2026. Stress-test findings are in simulation.</cite>
-</section>
-
-      <section class="slide s-backup s-directions" data-backup data-title="Two directions" data-notes="Our mentor asked us to keep two directions open. A: control the nicotine. B: make the habit visible with tracking and progress. The app already has pieces of both.">
-        <h2>Two directions we are testing</h2>
-        <div class="two">
-          <div class="reveal"><h3>A. Nicotine control</h3><p>For adults who already try to cut down: the step-down decision is made for them, from their own puffs. The engine does not yet react to more puffing.</p><p class="muted">In the app: weekly strength, holds, half steps, the mixing recipe.</p></div>
-          <div class="reveal"><h3>B. Puff tracking with progress</h3><p>For adults who want to see their habit: when they vape most, and whether it changes.</p><p class="muted">In the app: hardest hours, the week's pattern, progress milestones.</p></div>
-        </div>
-        <p class="next-phase">Both are hypotheses. The interviews decide which problem comes first.</p>
+      <section class="slide s-backup s-sources" data-backup data-title="Sources: customer and market" data-notes="The customer and market numbers. The segment sizes are our estimates: nobody has measured how many vapers wear a tracker.">
+        <h2>Sources: customer and market</h2>
+<div class="source-grid three">
+<div><span class="source-no">07</span><h3>Who vapes in Great Britain</h3><p>10.3% of adults vape, 7.8% daily; highest at ages 25 to 34 (15%) and 35 to 44 (14%). 60% of vapers are ex-smokers; 88% of them vape daily. About 4.2 million daily vapers and “about 7 in 10 are ex-smokers” are our calculations.</p><cite>ASH Smokefree GB survey, YouGov, 13,259 adults, 18 Feb to 19 Mar 2026. Online panel, weighted. ASH is a campaign charity.</cite><a href="https://ash.org.uk" target="_blank" rel="noreferrer">ash.org.uk</a></div>
+<div><span class="source-no">08</span><h3>Connected wearables</h3><p>Used an internet-connected wearable (such as a smart watch or fitness band) in the last 3 months, 2024: Spain 37.45% of people aged 16 to 74 (EU 29.91%); Spain 47.56% at ages 25 to 34 (EU 39.9%).</p><cite>Eurostat, Internet of Things: use (isoc_iiot_use), 2024. Official statistics. Measures use of any connected wearable, not health tracking.</cite><a href="https://ec.europa.eu/eurostat/databrowser/view/isoc_iiot_use/default/table" target="_blank" rel="noreferrer">ec.europa.eu/eurostat</a></div>
+<div><span class="source-no">09</span><h3>Refillable vapes in the EU</h3><p>51% of people who vape now use a refillable tank device every day; 56% at ages 25 to 39.</p><cite>European Commission, Special Eurobarometer 539, May to June 2023, table QD7a. 814 current e-cigarette users aged 15+ in the EU 27. Small subsample.</cite><a href="https://europa.eu/eurobarometer/surveys/detail/2995" target="_blank" rel="noreferrer">europa.eu/eurobarometer</a></div>
+<div><span class="source-no">10</span><h3>Segment sizes: our estimates</h3><p>Daily vapers aged 25 to 44 (ASH for GB; Eurobarometer 539 by age for the EU; INE 2023 and EDADES 2024 for Spain), times a wearable rate from the low-education rate up to the age 25 to 34 rate (Eurostat 2024).</p><cite>Results: GB about 0.5 to 0.8 million, EU about 0.6 to 1.3 million, Spain about 27,000 to 75,000. No survey has measured how many vapers wear a tracker.</cite></div>
+<div><span class="source-no">11</span><h3>The JUUL2 app</h3><p>Juul Labs says its app shows users “when and how they use their JUUL devices, and how their usage changes over time”. It works only with JUUL’s own pods, and it is run by the company that sells the nicotine.</p><cite>Juul Labs, submission to the UK Competition and Markets Authority, Feb 2025.</cite><a href="https://assets.publishing.service.gov.uk/media/67c81fed8247839c255ae2ca/Juul_Labs.pdf" target="_blank" rel="noreferrer">assets.publishing.service.gov.uk</a></div>
+<div><span class="source-no">12</span><h3>What is real, what is simulated</h3><p>Real: the clip on the bench (0 false puffs in 5 minutes untouched), the live tracking in the demo, the app. Simulated: the example day in the demo, and the people the coach engine was tested on.</p><cite>A bench test is not a field test. The clip has not been fitted to a real vape. Nothing has been tested in people.</cite></div>
+</div>
       </section>
 
-      <section class="slide s-backup s-safety" data-backup data-title="Safety" data-notes="These safeguards do not establish clinical safety or effectiveness. This is not medical advice.">
-        <h2>Product boundaries and safeguards</h2>
-        <ul class="status">
-          <li><i data-icon="shield-check"></i><div><b>Adults only.</b> Setup starts with "I'm 18 or older and I vape". Wane never sells nicotine.</div></li>
-          <li><i data-icon="shield-check"></i><div><b>Never a raise.</b> The strength only holds or goes down.</div></li>
-          <li><i data-icon="shield-check"></i><div><b>Pregnancy (or trying to be) or breastfeeding stops the plan:</b> changing nicotine then should be planned with a doctor or midwife. Daily smokers get a warning first.</div></li>
-          <li><i data-icon="shield-check"></i><div><b>Your data stays on your phone.</b> No account needed.</div></li>
+      <section class="slide s-backup s-sources" data-backup data-title="Sources: why now" data-notes="The why-now numbers. If asked about the gym jump: the share was flat at 21% in 2020 and 2022; the 2024/25 wave moved mostly online and non-response rose, so part of the jump may be the method. The industry count also rose, 5.5 to 7.1 million from 2019 to 2025.">
+        <h2>Sources: why now</h2>
+<div class="source-grid three">
+<div><span class="source-no">13</span><h3>Connected wearables, 2020 to 2024</h3><p>Spain, ages 16 to 74: 23% in 2020, 37% in 2024; 46% to 48% at ages 25 to 44. EU 2024: 30%. Most of the rise was 2020 to 2022. The 2024 question covers the last 3 months only, so 2022 and 2024 can’t be compared exactly.</p><cite>Eurostat ICT survey, Internet of Things: use (isoc_iiot_use), 2020 and 2024. Official statistics.</cite><a href="https://ec.europa.eu/eurostat/databrowser/view/isoc_iiot_use/default/table" target="_blank" rel="noreferrer">ec.europa.eu/eurostat</a></div>
+<div><span class="source-no">14</span><h3>Gym members</h3><p>Spain, ages 15+: 17.6% in 2015, 30.7% in 2024/25; 48% at ages 25 to 34. Flat at 21% in 2020 and 2022. The 2024/25 wave was mostly answered online (74%) and non-response rose from 10% to 29%, so part of the jump may be the method. Industry count: 5.5 m (2019) to 7.1 m (2025) fitness club members.</p><cite>Ministerio de Educación, FP y Deportes and CSD, Encuesta de Hábitos Deportivos 2024/25 (Jan 2026). EuropeActive and Deloitte, European Health &amp; Fitness Market Report 2025 (Apr 2026).</cite></div>
+<div><span class="source-no">15</span><h3>Health information online</h3><p>Looked up health information online in the last 3 months, ages 16 to 74. Spain: 51.9% in 2015, 60.1% in 2019, 68.2% in 2025. EU: 45.0% to 60.3%. In Spain, flat at 65% to 70% since 2020; much of the rise since 2015 is more people going online.</p><cite>Eurostat ICT survey, Individuals: internet activities (isoc_ci_ac_i), indicator “seeking health information”. Official statistics.</cite><a href="https://ec.europa.eu/eurostat/databrowser/view/isoc_ci_ac_i/default/table" target="_blank" rel="noreferrer">ec.europa.eu/eurostat</a></div>
+</div>
+      </section>
+
+      <section class="slide s-backup s-regulation" data-backup data-title="Regulation" data-notes="Checked answer, only while the clip stays outside the vape’s air path: We sell no nicotine, and the clip stays outside the vape’s air path, so e-cigarette product rules don’t apply. But it’s a Bluetooth device: CE marking and e-waste registration before any sale. Puff data is likely health data, so it stays on the phone. Ad bans still bind us, so we never promote vaping. And we’re a lifestyle tool, not a treatment.">
+        <h2>Which rules apply</h2>
+        <ul class="rules">
+          <li><b>E-cigarette product rules: no</b>, while the clip stays outside the vape’s air path, is not needed to vape and is sold on its own. Built into a mouthpiece or tank, it would become a vape part.</li>
+          <li><b>Radio and electronics: yes, before any sale</b>, free pilot units included: CE marking, RoHS and e-waste registration.</li>
+          <li><b>Data protection: yes.</b> Puff data is likely health data. Today it stays on the phone: no server, no account.</li>
+          <li><b>Vape advertising bans: yes, now.</b> They cover any message that promotes vaping, whoever sends it. We never promote vaping.</li>
+          <li><b>Medical devices: no</b>, as long as we make no treatment claims. Wane is a lifestyle tool, not a treatment.</li>
+          <li><b>Spain’s tobacco bill (2026): not law yet.</b> Its broad “related product” definition could catch accessories. We watch it.</li>
         </ul>
+        <cite class="rules-cite">TPD 2014/40/EU art. 2(16) and 20(5); Radio Equipment Directive 2014/53/EU; GDPR art. 9; Spain Ley 28/2005; bill 121/000110 (BOCG, 11 Sep 2026). Our research summary of 5 Oct 2026, checked by a reviewer. Not legal advice.</cite>
       </section>
 
-      <section class="slide s-backup s-pay" data-backup data-title="Who pays" data-notes="Who pays is still a hypothesis. We start with the vaper, and test insurers and employers later.">
-        <h2>Who pays: our first hypothesis</h2>
-        <div class="two">
-          <div><h3>First: the vaper</h3><p>Our proposed buyer is the adult using Wane. Interviews must test whether they would pay, how much, and for how long.</p></div>
-          <div><h3>Later, to test</h3><p>Insurers and employers. We need evidence before we claim either would pay.</p></div>
-        </div>
-      </section>
-
-      <section class="slide s-backup s-alts" data-backup data-title="What people use today" data-notes="Anthony asked for the alternatives. Most vapers have never tried to quit vaping. Some lower the strength on their own. Most quit apps are built for smokers; vaping apps need each puff tapped by hand. Puff counters count but give no plan. In Spain, funded medicines are only for heavy smokers.">
+      <section class="slide s-backup s-alts" data-backup data-title="What people use today" data-notes="Anthony asked for the alternatives. Without a tool, the only record is memory. Tap-to-log apps need each puff typed. Puff counters count, but only on that device and with no length. JUUL’s app tracks use, but only on JUUL pods, run by the nicotine seller. PuffPacket is a Cornell research device from 2020, not a product. Quit apps are built for smokers. Puff counting is not new; our part is automatic time and length on your own refillable vape, from a company that sells no nicotine.">
         <h2>What people use today</h2>
         <ul class="alts">
-          <li><b>No quit attempt.</b> Only 36% of current vapers in Great Britain have ever tried to quit vaping.</li>
-          <li><b>Their own step-down.</b> 27% of current vapers in Great Britain have lowered their strength over time. We found no tool that links the step-down to what happens next.</li>
-          <li><b>Quit apps</b> (Smoke Free, Kwit, QuitNow). Built for smokers; nothing measures vaping automatically.</li>
-          <li><b>Vaping apps</b> (Puff Count, Puffless, Vaporate). Each puff is tapped by hand; fixed calendars.</li>
-          <li><b>Puff counters</b> (some pod devices, the JUUL2 app). They count puffs; no plan to lower nicotine.</li>
-          <li><b>Medicines.</b> In Spain, funded only for people who smoke 10 or more cigarettes a day with high dependence; patches are not funded.</li>
+          <li><b>Memory.</b> Without a tool, the only record is memory.</li>
+          <li><b>Tap-to-log apps</b> (Puff Count, Puffless, Vaporate). Each puff is tapped by hand; they cannot see puff length.</li>
+          <li><b>Puff counters on some pod vapes.</b> They count automatically, but only on that device, and show no length.</li>
+          <li><b>The JUUL2 app.</b> Tracks use over time, but only on JUUL’s own pods, and it is run by the company that sells the nicotine.</li>
+          <li><b>PuffPacket</b>: a Cornell research device (2020) that attaches to e&#8209;cigarettes and records puffs. Open designs; not a product.</li>
+          <li><b>Quit apps</b> (Smoke Free, Kwit, QuitNow). Built for smokers; they don’t measure vaping automatically.</li>
         </ul>
-        <cite class="alts-cite">ASH Smokefree GB survey, YouGov, 13,259 adults, Feb to Mar 2026. Spanish medicines register BIFIMED, read 3 Oct 2026. App store and product pages, 3 Oct 2026.</cite>
+        <p class="alts-claim">Puff counting itself is not new. Our part: each puff’s time and length, tracked automatically on your own refillable vape, by a company that sells no nicotine.</p>
+        <cite class="alts-cite">App store and product pages, 3 Oct 2026. Juul Labs, submission to the UK CMA, Feb 2025. PuffPacket: Adams et al., Cornell Tech, ACM CHI 2020.</cite>
+      </section>
+
+      <section class="slide s-backup s-price" data-backup data-title="What it costs, what it sells for" data-notes="What does it cost? A clip costs about twenty-seven euros to build by hand today, and about sixteen at a thousand units. We lend it, we don’t sell it: after your goal you send it back, we change the battery, and it serves up to three people. The plan price was worked out for the coach; for the tracker, the model to test is the clip plus an app subscription.">
+<header><h2>What it costs, what it sells for</h2><p class="price-note">Worked out for the coach plan (year 2). For the tracker, the model to test is clip + app subscription.</p></header>
+<div class="two">
+<div><h3>Cost of one clip</h3>
+<p>About <b>€27</b> today, built by hand<br><span class="muted">parts about €21 at list prices</span></p>
+<p>About <b>€16</b> at 1,000 units<br><span class="muted">our estimate, €12 to €22</span></p>
+<p><b>Lent, not sold.</b> Back after the goal, new battery, next person: up to 3 people per clip</p></div>
+<div><h3>Price: our hypothesis to test</h3>
+<p><b>€129</b> for the 26-week plan, clip on loan, plus a <b>€20</b> refundable deposit</p>
+<p>After the goal: optional <b>€2.99</b> a month to keep tracking</p>
+<p>Later: insurers and employers, priced per person</p></div>
+</div>
+<p class="next-phase">Prices are hypotheses: no user or payer has seen them yet. Costs are list prices and our estimates; certification and testing not included.</p>
+</section>
+
+<section class="slide s-backup s-chart" data-backup data-title="Year 2: the coach, in simulation" data-seconds="0" data-notes="The coach is year 2. The engine runs on the phone, and we checked it against our research model: 56 decisions, zero differences. Two simulated people, same engine: on hard weeks it holds, so Lucía reaches zero nine weeks after Marta. Simulation only.">
+<header class="chart-head"><h2>Year 2: the coach can pause</h2><p class="lede">Two simulated people. The same decision engine. Simulation only.</p></header>
+<figure class="chart"><svg id="plan-chart" role="img" aria-label="In simulation, Marta reaches zero strength in week 26. Lucía has holds and smaller steps and reaches zero in week 35."></svg><figcaption>In simulation. Weekly strengths joined by curves. Vertical scale stretched near zero.<br>Weeks include three learning weeks.</figcaption></figure>
+</section>
+
+      <section class="slide s-backup s-limits" data-backup data-title="Coach engine limits (simulation)" data-notes="In simulation, our 4 October stress tests found that increased puffing and earlier first use did not trigger the intended response. Holds tracked bedtime, and missing data caused wrong decisions. These limits are known. Planned fixes need new tests, then supervised validation in people.">
+<h2>Coach engine: current limits</h2><div class="two"><div><h3>Known limits</h3><p>In simulation, rising total puffing did not change the plan.</p><p>In simulation, holds tracked bedtime more than increased puffing.</p><p>With no puff data, it still steps down every week.</p><p>Puff timing is a signal, not a direct measure of nicotine absorbed.</p></div><div><h3>Next model work</h3><p>Respond to changes relative to each person’s usual pattern.</p><p>Retrain on real puff data from adult vapers, with consent.</p><p class="muted">Clinical outcomes remain untested.</p></div></div><cite>Our internal stress tests, 4 Oct 2026. Stress-test findings are in simulation.</cite>
+</section>
+
+<section class="slide s-backup s-app" data-backup data-title="Year 2: the coach app" data-notes="The working app with the year-2 coach. Lucía is a simulated person. Keys: 1 Today, 2 Why, 3 Plan, 4 Week, 5 Recipe, W welcome screen, R reset Lucía.">
+<div class="app-left"><p class="eyebrow">Working app · simulated person</p><h2>Year 2:<br>the coach</h2><p class="lede">Lucía is simulated. Each week the engine lowers her nicotine a little, a bit less, or holds.</p><p class="app-week">The <b>Week</b> screen (4) already shows a tracker view: her hardest hours, from her puff times.</p></div>
+<div class="demo-right"><div class="phone"><iframe id="app-frame" title="Working Wane app with Lucía’s simulated history" src="about:blank"></iframe></div><nav class="demo-steps" aria-label="App screens"><button data-step="0"><kbd>1</kbd>Today</button><button data-step="1"><kbd>2</kbd>Why</button><button data-step="2"><kbd>3</kbd>Plan</button><button data-step="3"><kbd>4</kbd>Week</button><button data-step="4"><kbd>5</kbd>Recipe</button></nav></div>
+</section>
+
+<!-- Backup: how it works (moved out of the 4 minutes; the demo slide carries the key facts) -->
+<section class="slide s-how" data-backup data-title="How it works" data-notes="Backup for technical questions. The clip reads ten times a second. A puff starts when the drop passes 100 pascals and ends under 50, so small wobbles don’t count. On the bench, five minutes untouched: zero false puffs. Bluetooth sends each puff to the app; today it’s a cable. The data stays on the phone, where the habit analysis runs. Honest status: a bench prototype.">
+<header><div><p class="eyebrow">How it works</p><h2>From puff to habit</h2></div><span class="status-pill">Status: bench prototype</span></header>
+<ol class="pipeline">
+ <li><span class="flow-number">Clip</span><p>Reads <b>10 times a second</b>.</p><p>A puff starts when the drop passes <b>100 Pa</b> and ends below <b>50 Pa</b>.</p><p><b>0 false puffs</b> in 5 minutes untouched on the bench.</p></li>
+ <li><span class="flow-number">Bluetooth</span><p>Each puff’s time and length go to the phone.</p><p class="muted">A USB cable for today’s demo.</p></li>
+ <li><span class="flow-number">The app</span><p>The data stays on the phone.</p><p class="muted">No account needed.</p></li>
+ <li><span class="flow-number">Habit analysis</span><p>Puffs per day, puff length, hardest hours, first puff, night puffs.</p></li>
+</ol>
+<figure class="puff-diagram"><svg id="puff-diagram" viewBox="0 0 1392 230" role="img" aria-label="A puff starts when the drop passes 100 pascals and ends when it falls below 50 pascals. Puff length is end time minus start time."></svg><figcaption>Schematic. Two lines, so small wobbles don’t start or end a puff. Puff length = end time minus start time.</figcaption></figure>
+</section>
+      <section class="slide s-backup s-safety" data-backup data-title="Safety and youth" data-notes="If the FDA question comes: the FDA lists connecting to a smartphone among features that appeal to teens. Our answer: an adults-only gate, no games, marketing aimed at 25 and over, nothing that looks like a gadget for teens. These safeguards do not establish clinical safety. This is not medical advice.">
+        <h2>Product boundaries and safeguards</h2>
+        <ul class="status">
+          <li><i data-icon="shield-check"></i><div><b>Adults only, permanently.</b> Setup starts with “I’m 18 or older and I vape”. Marketing aimed at 25 and over.</div></li>
+          <li><i data-icon="shield-check"></i><div><b>Nothing for teens.</b> No games or points for puffing, no gadget look, no youth channels. We never promote vaping, and Wane never sells nicotine.</div></li>
+          <li><i data-icon="shield-check"></i><div><b>Your data stays on your phone.</b> No account needed.</div></li>
+          <li><i data-icon="shield-check"></i><div><b>The coach (year 2) never raises nicotine.</b> Pregnancy (or trying to be) or breastfeeding stops the plan.</div></li>
+        </ul>
+      </section>
+
+      <section class="slide s-backup s-pay" data-backup data-title="Who pays" data-notes="Who pays is still a hypothesis. We start with the vaper: clip plus app subscription. Insurers and employers come later, and only with evidence.">
+        <h2>Who pays: our first hypothesis</h2>
+        <div class="two">
+          <div><h3>First: the vaper</h3><p>Clip + app subscription. Interviews must test whether adults who vape would pay, how much, and for how long.</p></div>
+          <div><h3>Later, to test</h3><p>Insurers and employers, for the coach. We need evidence before we claim either would pay. We never sell personal data.</p></div>
+        </div>
       </section>
 
     </div>
   </main>
 
   <div class="presenter" id="presenter" hidden>
-    <div class="p-top"><span id="p-timer" class="p-timer">3:00</span><span id="p-count"></span><button type="button" id="p-reset">Reset timer</button></div>
+    <div class="p-top"><span id="p-timer" class="p-timer">3:45</span><span id="p-count"></span><button type="button" id="p-reset">Reset timer</button></div>
     <h2 id="p-title"></h2>
     <p id="p-notes" class="p-notes"></p><p id="p-cue" class="p-cue"></p>
     <p class="p-next">Next: <span id="p-next"></span></p>
-    <p class="p-keys">Keys: arrows or clicker to move, 1 to 5 app screens, W welcome screen, R reset Lucía, P puff, C clip, T theme, F full screen, B backup slides</p>
+    <p class="p-keys">Keys: arrows or clicker to move, B backup slides, F full screen, T theme. Demo slide: S live sensor (USB), hold P simulated puff, R reset the panel, C Bluetooth. Coach app backup: 1 to 5 screens, W welcome, R reset Lucía.</p>
   </div>
 
 </body>
