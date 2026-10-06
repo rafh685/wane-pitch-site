@@ -6,7 +6,7 @@
   <title>Wane · Qualifying pitch</title>
   <link rel="icon" href="/wane-pitch-site/app/favicon.svg">
   <meta name="theme-color" content="#eef3f0">
-  <script type="module" crossorigin src="/wane-pitch-site/assets/index-BN3HGwVY.js"></script>
+  <script type="module" crossorigin src="/wane-pitch-site/assets/index-AQGqVOMP.js"></script>
   <link rel="stylesheet" crossorigin href="/wane-pitch-site/assets/index-DruCxp-t.css">
 </head>
 <body>
@@ -94,21 +94,21 @@
 </section>
 
 <!-- 6 Live demo (Raf, 50 s): the whole demo on one slide, with the app on a phone -->
-<section class="slide s-demo" data-title="Live demo" data-seconds="50" data-notes="RAF: [The live sensor is already on: S during setup.] This is live. No vape, no nicotine: just air through our clip. [Pull air through the tube, about 2 seconds.] That’s the pressure inside the clip, read ten times a second. Over the top line a puff starts; under the bottom line it ends, so small wobbles don’t count: five minutes untouched on the bench, zero false puffs. [Point at the phone.] And here’s the app: one puff today, its length, and it lands in this hour. [Pull again, longer.] A longer puff, and it sees the difference. The pale bars are a simulated example day; teal is live. Today it’s on a cable so you can see the signal. Day to day, the clip sends each puff to your phone over Bluetooth, and we tested that today too. [If Bluetooth was paired at setup (C), say instead: The graph comes over the cable; the count reaches the app over Bluetooth.] [If nothing moves: press V for the recording of the real clip, made today, and say: This is the real clip, recorded today on this slide. Or hold P for 2 seconds and say: This one is simulated, and the app marks it as simulated.]">
+<section class="slide s-demo" data-title="Live demo" data-seconds="50" data-notes="RAF: This is a controlled simulation of the pressure signal. Hold B to make a pull, release to end it. Small background noise stays below the start line. The phone counts the simulated puff and its duration. For a hardware demonstration, connect the real sensor with S and explain that the input is now live. The optional recorded clip remains available through its button.">
 <div class="demo-left">
- <header><p class="eyebrow">Live demo · air through a tube, no vape, no nicotine</p><h2>Every puff,<br>tracked live</h2></header>
+ <header><p class="eyebrow">Interactive demo · simulated pressure, or connect the clip</p><h2>Every puff,<br>tracked</h2></header>
  <div class="sensor" id="sensor">
-  <p class="sensor-cap"><span>Live pressure inside the clip (Pa)</span><span id="sensor-now" class="mono"></span></p>
-  <canvas id="sensor-canvas" width="1460" height="580" role="img" aria-label="Live pressure drop inside the clip over the last 10 seconds, with the puff start and end lines"></canvas>
+  <p class="sensor-cap"><span>Simulated pressure drop (Pa)</span><span id="sensor-now" class="mono"></span></p>
+  <canvas id="sensor-canvas" width="1460" height="580" role="img" aria-label="Pressure drop over the last 10 seconds. Simulated unless a live sensor is connected."></canvas>
   <p class="sensor-status" id="sensor-status"></p>
  </div>
  <ul class="how-strip"><li><b>10</b> readings a second</li><li>A puff: over <b>100 Pa</b>, ends under <b>50 Pa</b></li><li><b>0</b> false puffs in 5 min on the bench</li></ul>
  <div class="demo-controls">
   <button type="button" class="btn" id="sensor-connect"><i data-icon="usb"></i><span>Live sensor (S)</span></button>
-  <button type="button" class="btn ghost" id="puff-sim">Hold to puff (P)</button>
+  <button type="button" class="btn ghost" id="puff-sim" hidden>Hold to pull (B / P)</button>
   <button type="button" class="sample-btn" id="puff-sample">Simulated 2 s puff</button>
   <button type="button" class="sample-btn" id="clip-connect"><span>Bluetooth (C)</span></button>
-  <button type="button" class="sample-btn" id="backup-video-btn">Backup video (V)</button>
+  <button type="button" class="sample-btn" id="backup-video-btn">Recorded clip (optional)</button>
  </div>
  <p class="puff-foot" id="puff-foot"></p>
 </div>
@@ -132,7 +132,7 @@
    </div>
    <ol class="puff-log" id="puff-log" aria-label="Latest puffs"></ol>
   </div>
-  <p class="phone-note">App screen, live from the clip. Prototype.</p>
+  <p class="phone-note">Prototype · each puff is labelled by its source.</p>
  </div>
 </div>
 <div class="backup-video" id="backup-video" aria-hidden="true">
@@ -308,7 +308,7 @@
     <h2 id="p-title"></h2>
     <p id="p-notes" class="p-notes"></p><p id="p-cue" class="p-cue"></p>
     <p class="p-next">Next: <span id="p-next"></span></p>
-    <p class="p-keys">Keys: arrows or clicker to move, B backup slides, F full screen, T theme. Demo slide: S live sensor (USB), hold P simulated puff, R reset the panel, C Bluetooth. Coach app backup: 1 to 5 screens, W welcome, R reset Lucía.</p>
+    <p class="p-keys">Keys: arrows or clicker to move, B backup slides, F full screen, T theme. Demo slide: hold B or P simulated pressure drop, Shift+B backups, S live sensor (USB), R reset the panel, C Bluetooth. Coach app backup: 1 to 5 screens, W welcome, R reset Lucía.</p>
   </div>
 
 </body>
