@@ -6,8 +6,8 @@
   <title>Wane · Qualifying pitch</title>
   <link rel="icon" href="/wane-pitch-site/app/favicon.svg">
   <meta name="theme-color" content="#eef3f0">
-  <script type="module" crossorigin src="/wane-pitch-site/assets/index-CpBzUQOx.js"></script>
-  <link rel="stylesheet" crossorigin href="/wane-pitch-site/assets/index-DruCxp-t.css">
+  <script type="module" crossorigin src="/wane-pitch-site/assets/index-DaUTMVuk.js"></script>
+  <link rel="stylesheet" crossorigin href="/wane-pitch-site/assets/index-BT8Z7UJT.css">
 </head>
 <body>
   <main class="viewport">
@@ -69,7 +69,7 @@
 </section>
 
 <!-- 4 Why now (Raf, 20 s). Lines from why-now-final.md (independently checked 9/10, 5 Oct), unchanged. Frame: tracking is mainstream and here to stay; never "rising fast". -->
-<section class="slide s-whynow" data-title="Why now" data-seconds="20" data-notes="RAF: More than a third of Spaniards now use a smartwatch, fitness band or similar, up from under a quarter in 2020. Almost one in three is a gym member. Nearly seven in ten look up health information online. Their watch counts their steps. It does not count their puffs.">
+<section class="slide s-whynow" data-title="Why now" data-seconds="24" data-notes="RAF: People care more and more about their fitness and health, and they measure it. More than a third of Spaniards now use a smartwatch, fitness band or similar, up from under a quarter in 2020. Almost one in three is a gym member. Nearly seven in ten look up health information online. Their watch counts their steps. It does not count their puffs.">
 <header><p class="eyebrow">Why now</p><h2>People care more about<br>fitness and health.</h2></header>
 <div class="now-grid">
  <div><strong>37%</strong><div class="then" aria-hidden="true"><span style="--w:.23"><b>2020</b> 23%</span><span class="on" style="--w:.37"><b>2024</b> 37%</span></div><p>of Spaniards use a smartwatch or other wearable.</p><cite>Eurostat 2024.</cite></div>
@@ -94,11 +94,11 @@
 </section>
 
 <!-- 6 Live demo (Raf, 50 s): the whole demo on one slide, with the app on a phone -->
-<section class="slide s-demo" data-title="Live demo" data-seconds="50" data-notes="RAF: This is a controlled simulation of the pressure signal. Hold B to make a pull, release to end it. Small background noise stays below the start line. The phone counts the simulated puff and its duration. For a hardware demonstration, connect the real sensor with S and explain that the input is now live. The optional recorded clip remains available through its button.">
+<section class="slide s-demo" data-title="Live demo" data-seconds="50" data-notes="RAF: Our clip broke last night, so this is a simulation of the exact signal it sends. [Hold B, about 2 seconds.] Over the top line a puff starts; under the bottom line it ends, so small wobbles don’t count. [Point at the phone.] And here’s the app: one puff, its length, and it lands in this hour. [Hold B again, longer.] A longer puff, and it sees the difference. Day to day, the clip sends each puff to your phone over Bluetooth. [If the real clip works: press S during setup and say instead: This is live. No vape, no nicotine: just air through our clip, read ten times a second.]">
 <div class="demo-left">
- <header><p class="eyebrow">Interactive demo · simulated pressure, or connect the clip</p><h2>Every puff,<br>tracked</h2></header>
+ <header><p class="eyebrow">Interactive demo</p><h2>Every puff,<br>tracked</h2></header>
  <div class="sensor" id="sensor">
-  <p class="sensor-cap"><span>Simulated pressure drop (Pa)</span><span id="sensor-now" class="mono"></span></p>
+  <p class="sensor-cap"><span>Pressure drop (Pa)</span><span id="sensor-now" class="mono"></span></p>
   <canvas id="sensor-canvas" width="1460" height="580" role="img" aria-label="Pressure drop over the last 10 seconds. Simulated unless a live sensor is connected."></canvas>
   <p class="sensor-status" id="sensor-status"></p>
  </div>
@@ -106,7 +106,7 @@
  <div class="demo-controls">
   <button type="button" class="btn" id="sensor-connect"><i data-icon="usb"></i><span>Live sensor (S)</span></button>
   <button type="button" class="btn ghost" id="puff-sim" hidden>Hold to pull (B / P)</button>
-  <button type="button" class="sample-btn" id="puff-sample">Simulated 2 s puff</button>
+  <button type="button" class="sample-btn" id="puff-sample">2 s example</button>
   <button type="button" class="sample-btn" id="clip-connect"><span>Bluetooth (C)</span></button>
   <button type="button" class="sample-btn" id="backup-video-btn">Recorded clip (optional)</button>
  </div>
@@ -132,7 +132,7 @@
    </div>
    <ol class="puff-log" id="puff-log" aria-label="Latest puffs"></ol>
   </div>
-  <p class="phone-note">Prototype · each puff is labelled by its source.</p>
+  <p class="phone-note"></p>
  </div>
 </div>
 <div class="backup-video" id="backup-video" aria-hidden="true">
