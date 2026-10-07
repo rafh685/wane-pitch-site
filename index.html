@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wane · Qualifying pitch</title>
+  <title>Wane · Pitch</title>
   <link rel="icon" href="/wane-pitch-site/app/favicon.svg">
   <meta name="theme-color" content="#eef3f0">
-  <script type="module" crossorigin src="/wane-pitch-site/assets/index-DaUTMVuk.js"></script>
-  <link rel="stylesheet" crossorigin href="/wane-pitch-site/assets/index-BT8Z7UJT.css">
+  <script type="module" crossorigin src="/wane-pitch-site/assets/index-CrDNQj5-.js"></script>
+  <link rel="stylesheet" crossorigin href="/wane-pitch-site/assets/index-BESKYvA0.css">
 </head>
 <body>
   <main class="viewport">
@@ -46,10 +46,10 @@
 </section>
 
 <!-- 2 Problem (Raf, 25 s) -->
-<section class="slide s-problem" data-title="Problem" data-seconds="18" data-notes="RAF: And the data backs it up. A device counted 2.2 times more puffs than people reported. Half of people who smoke and vape say they vape continuously, all day. And in Spain, vaping went from 2% to 5% of 15 to 64 year olds since 2018. [If asked: another small study found people over-report, so memory is wrong in both directions.]">
+<section class="slide s-problem" data-title="Problem" data-seconds="18" data-notes="RAF: And the data backs it up. A smart vape counted 2.2 times as many puffs as people reported. Half of people who smoke and vape say they vape continuously, all day. And in Spain, vaping went from 2% to 5% of 15 to 64 year olds since 2018. [If asked: another small study found people over-report, so memory is wrong in both directions.]">
 <header><p class="eyebrow">The problem</p><h2>Vaping is a daily habit<br>with no data.</h2><p class="lede">The only record is memory, and memory is wrong.</p></header>
 <div class="facts">
- <div class="fact"><strong>2.2×</strong><p>more puffs measured by a device than people reported.</p><cite>Li 2021, US, small study.</cite></div>
+ <div class="fact"><strong>2.2×</strong><p>as many puffs counted by a smart vape as people reported.</p><cite>Li 2021, US, same people and days. Small study.</cite></div>
  <div class="fact"><strong>49%</strong><p>say they vape “continuously throughout the day”.</p><cite>Martinez 2020, US, people who smoke and vape.</cite></div>
  <div class="fact"><strong>2% → 5%</strong><p>of Spaniards aged 15 to 64 vaped last month (2018 → 2024).</p><cite>EDADES 2024, Spain’s official survey.</cite></div>
 </div>
@@ -93,8 +93,38 @@
 </div>
 </section>
 
+<!-- 6 Why measure it? (Raf, 30 s): the jury asked "why would you measure it?" (7 Oct). Numbers from feedback7/research.md, pending the independent check -->
+<section class="slide s-why" data-title="Why measure it?" data-seconds="30" data-notes="RAF: Why measure it? Because you can’t change what you can’t see. With a step counter, people walk about 2,500 more steps a day. Across 138 studies, tracking your progress helps people reach their goals. The catch: logging by hand fades, and people keep up automatic tracking much better. So Wane counts by itself. You just vape, and you finally see your real habit. [If asked whether tracking makes people quit: not on its own. In smokers, tracking lowered craving but showed no clear effect on quitting. Wane gives you the real number; the coach comes later.]">
+<header><p class="eyebrow">Why measure it?</p><h2>You can’t change<br>what you can’t see.</h2></header>
+<div class="why-grid">
+ <div><strong>+2,500</strong><p>steps a day for people with a step counter.</p><cite>Bravata 2007, review of 8 trials.</cite></div>
+ <div><strong>138</strong><p>studies: tracking your progress helps you reach your goal.</p><cite>Harkin 2016.</cite></div>
+ <div><strong>0</strong><p>typing. People keep up automatic tracking better than logging by hand.</p><cite>Patel 2021, review of 39 trials.</cite></div>
+</div>
+<p class="why-line">A step counter for vaping: <b>first see it, then decide.</b></p>
+</section>
+
+<!-- 7 The device (Ilian, 30 s): concept render of the finished Wane band (Figma AI, 8 Oct). No mechanism detail (concept v0.1 rule) -->
+<section class="slide s-clip" data-title="The device" data-seconds="30" data-notes="ILIAN: This is what the finished Wane would look like: a slim band that slips around your own refillable vape. You don’t press anything and you don’t type anything: it counts every puff and sends it to the app on your phone. You vape exactly as before. Today it’s a working prototype on the bench; this render is the design we’re building towards. [If asked how it senses the puff: we keep the mechanism private until it’s protected.]">
+<figure class="clip-art">
+ <img src="/wane-pitch-site/band-concept.png" alt="Concept render: a slim pine-green Wane band around the body of a refillable vape" width="1024" height="1024">
+ <span class="clip-tag" aria-hidden="true">Wane band</span>
+ <figcaption>Concept render</figcaption>
+</figure>
+<div class="clip-text">
+ <p class="eyebrow">The device</p>
+ <h2>Slips around your vape.<br>Counts every puff.</h2>
+ <ul class="clip-points">
+  <li><b>Wraps around</b> your own refillable vape.</li>
+  <li><b>Nothing to press,</b> nothing to type.</li>
+  <li><b>Every puff</b> goes to the app on your phone.</li>
+ </ul>
+ <p class="clip-status">Concept render. Today: a working prototype on the bench.</p>
+</div>
+</section>
+
 <!-- 6 Live demo (Raf, 50 s): the whole demo on one slide, with the app on a phone -->
-<section class="slide s-demo" data-title="Live demo" data-seconds="50" data-notes="RAF: Our clip broke last night, so this is a simulation of the exact signal it sends. [Hold B, about 2 seconds.] Over the top line a puff starts; under the bottom line it ends, so small wobbles don’t count. [Point at the phone.] And here’s the app: one puff, its length, and it lands in this hour. [Hold B again, longer.] A longer puff, and it sees the difference. Day to day, the clip sends each puff to your phone over Bluetooth. [If the real clip works: press S during setup and say instead: This is live. No vape, no nicotine: just air through our clip, read ten times a second.]">
+<section class="slide s-demo" data-title="Live demo" data-seconds="50" data-notes="RAF: Our clip is being repaired, so this is a simulation of the exact signal it sends. [Hold B, about 2 seconds.] Over the top line a puff starts; under the bottom line it ends, so small wobbles don’t count. [Point at the phone.] And here’s the app: one puff, its length, and it lands in this hour. [Hold B again, longer.] A longer puff, and it sees the difference. Day to day, the clip sends each puff to your phone over Bluetooth. [If the real clip works: press S during setup and say instead: This is live. No vape, no nicotine: just air through our clip, read ten times a second.]">
 <div class="demo-left">
  <header><p class="eyebrow">Interactive demo</p><h2>Every puff,<br>tracked</h2></header>
  <div class="sensor" id="sensor">
@@ -142,7 +172,7 @@
 
 
 <!-- 7 Market (Raf, 30 s) -->
-<section class="slide s-market" data-title="Market: a blue ocean" data-seconds="30" data-notes="ILIAN: A tracking market exists, but not for vaping. Tap-to-log apps make you type every puff. Puff counters only count, and only on that one device. Wane is automatic, sees every puff’s length, shows your habit over days, and is designed for the refillable vape you already own. Our first segment, daily vapers aged 25 to 44 who already use a wearable: by our estimate, 0.6 to 1.3 million in the EU. The model we’ll test: the clip plus an app subscription. [If asked: the sizes are our estimates; no survey has measured how many vapers wear a tracker. The clip is a prototype, not yet fitted to a vape. The price is a hypothesis.]">
+<section class="slide s-market" data-title="Market: a blue ocean" data-seconds="40" data-notes="ILIAN: A tracking market exists, but not for vaping. Tap-to-log apps make you type every puff. Puff counters only count, and only on that one device. Wane is automatic, sees every puff’s length, shows your habit over days, and is designed for the refillable vape you already own. Our first segment, daily vapers aged 25 to 44 who already use a wearable: by our estimate, 0.6 to 1.3 million in the EU. And the price: vapers already spend about 35 euros a month on liquid. Wane costs 5.99 a month, clip included: less than one week of liquid. [If asked: the sizes are our estimates; no survey has measured how many vapers wear a tracker. The clip is a prototype, not yet fitted to a vape. The price is a hypothesis to test. A vape kit costs about 20 to 55 euros in Spanish shops.]">
 <header><p class="eyebrow">Market: a blue ocean</p><h2>A tracking market exists.<br>Not for vaping.</h2></header>
 <div class="market">
  <div class="grid-wrap">
@@ -165,7 +195,12 @@
   <cite>Our estimates.</cite>
  </aside>
 </div>
-<p class="model-line">Model to test: <b>clip + app subscription</b></p>
+<div class="price-strip">
+ <p class="price-label">Wane costs less a month than one week of liquid</p>
+ <div class="pbar"><span class="pname">Liquid</span><span class="ptrack"><i style="--w:1"></i></span><b>about €35 a month</b></div>
+ <div class="pbar wane"><span class="pname">Wane</span><span class="ptrack"><i style="--w:.171"></i></span><b>€5.99 a month, clip included</b></div>
+ <p class="price-note">A vape kit: about €20 to €55. Oura: €5.99 a month plus a €429 ring. WHOOP: from €199 a year. Spanish shop prices and our estimate, Oct 2026. Our price is a hypothesis.</p>
+</div>
 </section>
 
 <!-- 8 Vision + close (Ilian, 25 s) -->
@@ -215,6 +250,14 @@
 </div>
       </section>
 
+      <section class="slide s-backup s-sources" data-backup data-title="Sources: why measure and price" data-notes="Sources for slides 6 and 9 (checked 7 Oct 2026). The liquid figure is our estimate: 2 ml a day at about 5.50 euros per 10 ml, including the 2025 Spanish liquid tax; UK vapers on reusable devices report 7.51 pounds a week, about 38 euros a month. If asked about the smart-vape study: people used the smart vape on only a quarter of days because they preferred their own device; that is why Wane goes on your own vape.">
+        <h2>Sources: why measure, and price</h2>
+        <div class="source-grid three">
+          <div><span class="source-no">Why measure</span><p>Bravata et al., JAMA 2007: 8 randomised trials, pedometer users walked 2,491 more steps a day.</p><p>Harkin et al., Psychological Bulletin 2016: 138 randomised studies, 19,951 people; tracking progress helped people reach goals.</p><p>Patel et al. 2021: 39 trials; in 10 of 12 programmes, automatic tracking was kept up better than manual logging.</p></div>
+          <div><span class="source-no">What vaping costs</span><p>Kit prices: Spanish online shops, 7 Oct 2026, about 20 to 55 euros (some on sale).</p><p>Liquid: about 5 to 7 euros per 10 ml including the Spanish liquid tax (BOE, art. 64 septies: 0.15 euros per ml up to 15 mg/ml, 0.20 above). Our estimate: about 35 euros a month at 2 ml a day.</p><p>Jackson et al., Tobacco Control 2026: GB vapers on reusable devices, 7.51 pounds a week (April 2025).</p></div>
+          <div><span class="source-no">Trackers</span><p>Official Spanish sites, 7 Oct 2026: Oura 5.99 euros a month plus the ring (429 euros); WHOOP from 199 euros a year, device included; MyFitnessPal Premium 9.99 euros a month.</p><p class="source-limit">Wane at 5.99 euros a month, clip included, is our hypothesis. Nobody has seen this price yet.</p></div>
+        </div>
+      </section>
       <section class="slide s-backup s-regulation" data-backup data-title="Regulation" data-notes="Checked answer, only while the clip stays outside the vape’s air path: We sell no nicotine, and the clip stays outside the vape’s air path, so e-cigarette product rules don’t apply. But it’s a Bluetooth device: CE marking and e-waste registration before any sale. Puff data is likely health data, so it stays on the phone. Ad bans still bind us, so we never promote vaping. And we’re a lifestyle tool, not a treatment.">
         <h2>Which rules apply</h2>
         <ul class="rules">
